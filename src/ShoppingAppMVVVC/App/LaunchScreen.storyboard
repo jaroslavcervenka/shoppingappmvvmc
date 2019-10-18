@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="7Dk-4c-MLH">
+                                <rect key="frame" x="8" y="28" width="398" height="700"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hje-LD-yiT">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="200"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oriflame-logo" translatesAutoresizingMaskIntoConstraints="NO" id="EDb-c2-UfB">
+                                                <rect key="frame" x="4" y="0.0" width="394" height="200"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="CCN-WU-F7k"/>
+                                            <constraint firstAttribute="bottom" secondItem="EDb-c2-UfB" secondAttribute="bottom" id="I8z-a9-Oyg"/>
+                                            <constraint firstItem="EDb-c2-UfB" firstAttribute="top" secondItem="Hje-LD-yiT" secondAttribute="top" id="JGO-oI-oGm"/>
+                                            <constraint firstAttribute="trailing" secondItem="EDb-c2-UfB" secondAttribute="trailing" id="kQf-cd-Q65"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FAB-60-I9Y">
+                                        <rect key="frame" x="0.0" y="201" width="398" height="499"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Shopping App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQm-lg-sHq">
+                                                <rect key="frame" x="89" y="8" width="225" height="32"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="eQm-lg-sHq" secondAttribute="trailing" id="bo5-E3-Z9v"/>
+                                            <constraint firstItem="eQm-lg-sHq" firstAttribute="leading" secondItem="FAB-60-I9Y" secondAttribute="leading" id="tGY-Sk-jnX"/>
+                                            <constraint firstItem="eQm-lg-sHq" firstAttribute="top" secondItem="FAB-60-I9Y" secondAttribute="top" constant="10" id="wAY-IK-Rg0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Dk-4c-MLH" secondAttribute="bottom" constant="8" id="0SS-qf-Ues"/>
+                            <constraint firstItem="EDb-c2-UfB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="5NC-Yr-tjx"/>
+                            <constraint firstItem="7Dk-4c-MLH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="NJh-XY-eFS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Dk-4c-MLH" secondAttribute="trailing" constant="8" id="o8H-Uj-4WI"/>
+                            <constraint firstItem="7Dk-4c-MLH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="pLw-2h-dlB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48.799999999999997" y="372.86356821589209"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="oriflame-logo" width="900" height="900"/>
+    </resources>
+</document>

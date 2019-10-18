@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="iDz-al-Ccj">
+            <objects>
+                <viewController storyboardIdentifier="SignInViewController" id="Jq7-0U-Cbb" customClass="SignInViewController" customModule="ShoppingAppMVVVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="m1z-IO-g1y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="129-Eo-Pgg">
+                                <rect key="frame" x="16" y="100" width="382" height="174"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DrW-Qj-ius">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="atx-cp-bcK" customClass="LocalizedTextField" customModule="ShoppingAppMVVVC" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" textContentType="email"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderLocalizationKey" value="UserName"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ODg-nD-ZKu"/>
+                                            <constraint firstAttribute="bottom" secondItem="atx-cp-bcK" secondAttribute="bottom" id="VBl-bW-qnK"/>
+                                            <constraint firstItem="atx-cp-bcK" firstAttribute="leading" secondItem="DrW-Qj-ius" secondAttribute="leading" id="WnW-cq-9Sz"/>
+                                            <constraint firstAttribute="trailing" secondItem="atx-cp-bcK" secondAttribute="trailing" id="hTu-mW-sqI"/>
+                                            <constraint firstItem="atx-cp-bcK" firstAttribute="top" secondItem="DrW-Qj-ius" secondAttribute="top" id="lET-aq-s0I"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Thh-tn-Xvf">
+                                        <rect key="frame" x="0.0" y="62" width="382" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ezw-Fj-dHg" customClass="LocalizedTextField" customModule="ShoppingAppMVVVC" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" secureTextEntry="YES" textContentType="password"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderLocalizationKey" value="Password"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="ezw-Fj-dHg" firstAttribute="leading" secondItem="Thh-tn-Xvf" secondAttribute="leading" id="0Ku-VF-2us"/>
+                                            <constraint firstAttribute="trailing" secondItem="ezw-Fj-dHg" secondAttribute="trailing" id="0kG-fg-fGx"/>
+                                            <constraint firstAttribute="height" constant="50" id="J59-ma-VzS"/>
+                                            <constraint firstItem="ezw-Fj-dHg" firstAttribute="top" secondItem="Thh-tn-Xvf" secondAttribute="top" id="LGV-c1-6yP"/>
+                                            <constraint firstAttribute="bottom" secondItem="ezw-Fj-dHg" secondAttribute="bottom" id="gPo-l3-SXk"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ne-bK-xWU" userLabel="Sign In Button" customClass="ButtonWithProgress" customModule="ShoppingAppMVVVC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="124" width="382" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="SignIn"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="129-Eo-Pgg" secondAttribute="trailing" constant="16" id="HQU-fR-oDV"/>
+                            <constraint firstItem="129-Eo-Pgg" firstAttribute="top" secondItem="m1z-IO-g1y" secondAttribute="top" constant="100" id="WP4-bT-hdU"/>
+                            <constraint firstItem="129-Eo-Pgg" firstAttribute="leading" secondItem="m1z-IO-g1y" secondAttribute="leading" constant="16" id="Y58-0b-dZk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pw8-ME-Kyi"/>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="ezw-Fj-dHg" id="yp5-nI-9xY"/>
+                        <outlet property="signInButton" destination="7ne-bK-xWU" id="gVg-oL-3Nz"/>
+                        <outlet property="usernameTextField" destination="atx-cp-bcK" id="6q4-hm-ES4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cud-YY-3KI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15.942028985507248" y="203.57142857142856"/>
+        </scene>
+    </scenes>
+</document>

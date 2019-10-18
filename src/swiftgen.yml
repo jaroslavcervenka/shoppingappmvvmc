@@ -1,0 +1,18 @@
+input_dir: ShoppingAppMVVVC/Resources
+output_dir: ShoppingAppMVVVC/Generated/
+xcassets:
+  - inputs: Icons.xcassets
+    outputs:
+      - templateName: swift4
+        output: IconsConstants.swift
+        params:
+          enumName: Icons
+
+
+colors:
+  inputs: AppColors.txt
+  outputs:
+    templateName: swift4
+    output: ColorsConstants.swift
+    params:
+      enumName: AppColors

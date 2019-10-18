@@ -1,0 +1,82 @@
+PODS:
+  - Action (4.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - Alamofire (4.8.2)
+  - JGProgressHUD (2.0.3)
+  - KeychainAccess (3.2.0)
+  - Kingfisher (5.7.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - SnapKit (5.0.1)
+  - SwiftGen (6.1.0)
+  - SwiftyBeaver (1.7.1)
+  - SwiftyJSON (5.0.0)
+  - Swinject (2.6.0)
+  - SwinjectAutoregistration (2.6.0):
+    - Swinject (~> 2.6)
+  - XCoordinator (2.0.3):
+    - XCoordinator/Core (= 2.0.3)
+  - XCoordinator/Core (2.0.3)
+  - XCoordinator/RxSwift (2.0.3):
+    - RxSwift (~> 5.0)
+    - XCoordinator/Core
+
+DEPENDENCIES:
+  - Action (~> 4.0)
+  - Alamofire (~> 4.7)
+  - JGProgressHUD
+  - KeychainAccess
+  - Kingfisher (~> 5.0)
+  - SnapKit (~> 5.0)
+  - SwiftGen (~> 6.0)
+  - SwiftyBeaver
+  - SwiftyJSON
+  - Swinject (= 2.6.0)
+  - SwinjectAutoregistration (= 2.6.0)
+  - XCoordinator (~> 2.0)
+  - XCoordinator/RxSwift (~> 2.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - JGProgressHUD
+    - KeychainAccess
+    - Kingfisher
+    - SnapKit
+    - SwiftGen
+    - SwiftyBeaver
+    - SwiftyJSON
+    - Swinject
+    - SwinjectAutoregistration
+  trunk:
+    - Action
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - XCoordinator
+
+SPEC CHECKSUMS:
+  Action: 0d14986aad0f1330aa27ce65d0cdeaacbb63d91c
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  JGProgressHUD: 12b20a8f4ffe05258f8635c1ab92816e451f904d
+  KeychainAccess: 3b1bf8a77eb4c6ea1ce9404c292e48f948954c6b
+  Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
+  SwiftyBeaver: da5e573ad583586c18236324c36900990afe1733
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Swinject: 48a96cda93633cf2860697b4ce76ab5db9ebaca2
+  SwinjectAutoregistration: 93a908f7543c401b0c315305ac0ae501efdbce89
+  XCoordinator: 5ad39737e6fa8e8f09a8174b16976ccda5ede541
+
+PODFILE CHECKSUM: 3fb57760d6bf943ee58eee56dc11b8cee450eadc
+
+COCOAPODS: 1.8.1

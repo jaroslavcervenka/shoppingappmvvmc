@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+target 'ShoppingAppMVVVC' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ShoppingAppMVVVC
+  pod 'Kingfisher', '~> 5.0'
+  pod 'SnapKit', '~> 5.0'
+  pod 'Swinject', '2.6.0'
+  pod 'SwinjectAutoregistration', '2.6.0'
+  pod 'Alamofire', '~> 4.7'
+  pod 'KeychainAccess'
+  pod 'JGProgressHUD'
+  pod 'SwiftyJSON'
+  pod 'XCoordinator', '~> 2.0'
+  pod 'XCoordinator/RxSwift', '~> 2.0'
+  pod 'SwiftGen', '~> 6.0'
+  pod 'Action', '~> 4.0'
+  pod 'SwiftyBeaver'
+end
